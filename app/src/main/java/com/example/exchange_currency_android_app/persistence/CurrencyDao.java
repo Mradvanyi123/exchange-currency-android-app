@@ -1,8 +1,13 @@
 package com.example.exchange_currency_android_app.persistence;
 
+import androidx.room.*;
 
-import androidx.room.Dao;
+import com.example.exchange_currency_android_app.model.Currency;
+
+import java.util.List;
+
 
 @Dao
-public class CurrencyDao {
+interface CurrencyDao {
+
 }
