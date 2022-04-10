@@ -6,6 +6,6 @@ import com.skydoves.sandwich.ApiResponse
 import retrofit2.http.GET
 
 interface CurrencyService {
-    @GET("currency")
-    suspend fun fetchJokeList(): ApiResponse<List<Currency>>
+    @GET("huf.json")
+    suspend fun getJokeList(): ApiResponse<List<Currency>>
 }
