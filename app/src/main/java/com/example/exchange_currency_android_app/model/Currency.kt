@@ -8,15 +8,16 @@ import javax.annotation.concurrent.Immutable
 @Entity(tableName = "currency")
 @Immutable
 data class Currency(
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey val id: String,
     val name: String,
-    val date: Date,
+    val date: String,
     val exchangeRates: String // Object/ string
 ){
     companion object {
         fun mock() = Currency(
+            id = "0",
             name = "What do you call Dragon with no silver?",
-            date = Date(),
+            date = "2022.01.01",
             exchangeRates = "JsonReader()"
         )
     }
